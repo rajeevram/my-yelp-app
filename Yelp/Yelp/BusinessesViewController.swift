@@ -12,6 +12,7 @@ class BusinessesViewController: UIViewController, UITableViewDataSource, UITable
     
     // API/Logic Variables
     var businesses: [Business]!
+    //var searchBar = UISearchBar()
     
     // UI, UX Variables
     @IBOutlet weak var businessTableView: UITableView!
@@ -23,6 +24,8 @@ class BusinessesViewController: UIViewController, UITableViewDataSource, UITable
         businessTableView.dataSource = self
         businessTableView.rowHeight = UITableViewAutomaticDimension
         businessTableView.estimatedRowHeight = 120
+        
+        //navigationItem.titleView = searchBar
         
         Business.searchWithTerm(term: "Thai", completion: { (businesses: [Business]?, error: Error?) -> Void in
             

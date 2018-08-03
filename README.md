@@ -6,7 +6,7 @@ This project is a repdocution of the Yelp mobile application using the [Yelp API
 
 - [X] Table rows for search results should exhibit dynamic height according to the content height.
 - [X] Custom cells should have the proper autolayout constraints.
-- [ ] Search bar should be in the navigation bar.
+- [X] Search bar should be in the navigation bar (code is commented out for now).
 
 ## Walkthrough
 

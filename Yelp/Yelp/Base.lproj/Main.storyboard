@@ -53,7 +53,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0000 Street Address, ZZ XX YY" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gzG-m9-wag">
-                                                    <rect key="frame" x="89" y="58" width="192.5" height="16"/>
+                                                    <rect key="frame" x="89" y="58" width="278" height="16"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -99,6 +99,7 @@
                                                 <constraint firstItem="gzG-m9-wag" firstAttribute="leading" secondItem="O2D-vF-t8i" secondAttribute="leading" id="esx-wt-dI1"/>
                                                 <constraint firstItem="yrV-Hw-1Z8" firstAttribute="centerY" secondItem="O2D-vF-t8i" secondAttribute="centerY" id="got-qJ-us9"/>
                                                 <constraint firstItem="IuE-TV-MfI" firstAttribute="top" secondItem="eDj-jB-PLC" secondAttribute="top" constant="8" id="hDA-Ia-jkw"/>
+                                                <constraint firstAttribute="trailing" secondItem="gzG-m9-wag" secondAttribute="trailing" constant="8" id="ho3-dM-6OX"/>
                                                 <constraint firstItem="X8N-Jq-CQ7" firstAttribute="centerY" secondItem="O2D-vF-t8i" secondAttribute="centerY" id="mqZ-rm-e3A"/>
                                                 <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="01n-ve-ynY" secondAttribute="bottom" constant="8" id="sBW-bk-5WH"/>
                                                 <constraint firstItem="01n-ve-ynY" firstAttribute="top" secondItem="gzG-m9-wag" secondAttribute="bottom" constant="8" id="sEr-yy-ytG"/>
