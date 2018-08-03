@@ -10,6 +10,29 @@ import UIKit
 
 class BusinessCell: UITableViewCell {
 
+    // UI, UX Variables
+    @IBOutlet weak var thumbImage: UIImageView!
+    @IBOutlet weak var ratingImage: UIImageView!
+    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var reviewsLabel: UILabel!
+    @IBOutlet weak var addressLabel: UILabel!
+    @IBOutlet weak var cuisineLabel: UILabel!
+    @IBOutlet weak var distanceLabel: UILabel!
+    @IBOutlet weak var priceLabel: UILabel!
+    
+    // Logic/API Variables
+    var business: Business! {
+        didSet {
+            nameLabel.text = business.name
+            thumbImage.setImageWith(business.imageURL!)
+            ratingImage.image = business.ratingImage
+            reviewsLabel.text = "\(business.reviewCount!) Reviews"
+            addressLabel.text = business.address
+            cuisineLabel.text = business.categories
+            distanceLabel.text = business.distance
+        }
+    }
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
