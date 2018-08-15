@@ -13,3 +13,5 @@ This project is a repdocution of the Yelp mobile application using the [Yelp API
 ## Notes
 
 ## License
+
+    Copyright 2018 Rajeev Ram 
