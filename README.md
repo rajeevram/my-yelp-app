@@ -18,8 +18,8 @@ Will include a GIF walkthrough once more functionality is complete.
 
 The following user stories are to be completed:
 
-- [] User can update search category with the search bar
-- [] User can tap a cell in the table to see a detail view
+- [ ] User can update search category with the search bar
+- [ ] User can tap a cell in the table to see a detail view
 
 ## License
 
