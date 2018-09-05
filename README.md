@@ -12,12 +12,14 @@ The following user stories are complete:
 
 ## Walkthrough
 
+Will include a GIF walkthrough once more functionality is complete.
+
 ## Notes
 
 The following user stories are to be completed:
 
-- [X] User can update search category with the search bar
-- [X] User can tap a cell in the table to see a detail view
+- [] User can update search category with the search bar
+- [] User can tap a cell in the table to see a detail view
 
 ## License
 
