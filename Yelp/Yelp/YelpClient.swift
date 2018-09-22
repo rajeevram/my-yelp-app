@@ -29,19 +29,20 @@ class YelpClient: AFHTTPRequestOperationManager {
         super.init(coder: aDecoder)
     }
     
+    //MARK: Initializer
+    
     init(yelpAPIKey: String) {
         self.apiKey = yelpAPIKey
-        
         let baseUrl = URL(string: "https://api.yelp.com/v3/")
         super.init(baseURL: baseUrl)
         requestSerializer.setValue("Bearer \(self.apiKey!)", forHTTPHeaderField: "Authorization")
     }
     
     func searchWithTerm(_ term: String, completion: @escaping ([Business]?, Error?) -> Void) -> AFHTTPRequestOperation {
-        return searchWithTerm(term, sort: nil, categories: nil, openNow: nil, completion: completion)
+        return searchWithTerm(term, sort: nil, categories: nil, openNow: nil, withOffset: nil, completion: completion)
     }
     
-    func searchWithTerm(_ term: String, sort: YelpSortMode?, categories: [String]?, openNow: Bool?, completion: @escaping ([Business]?, Error?) -> Void) -> AFHTTPRequestOperation {
+    func searchWithTerm(_ term: String, sort: YelpSortMode?, categories: [String]?, openNow: Bool?, withOffset: Int?, completion: @escaping ([Business]?, Error?) -> Void) -> AFHTTPRequestOperation {
         // For additional parameters, see https://www.yelp.com/developers/documentation/v3/business_search
         
         // Default the location to San Francisco
@@ -57,6 +58,10 @@ class YelpClient: AFHTTPRequestOperationManager {
         
         if openNow != nil {
             parameters["open_now"] = openNow! as AnyObject
+        }
+        
+        if withOffset != nil {
+            parameters["offset"] = withOffset! as AnyObject
         }
         
         print(parameters)
